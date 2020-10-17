@@ -1,0 +1,15 @@
+{
+  "FindByDayTime":{
+    "$select": "distinct applicant,location",
+    "$order": "applicant"
+  },
+  "__main__": {
+    "$limit": 1000,
+    "$offset": 0,
+    "limit_per_page": 10,
+    "format": {
+      "json": "JsonParser"
+    }
+  }
+
+}
