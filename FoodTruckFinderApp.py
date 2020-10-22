@@ -29,7 +29,7 @@ def main():
     response_parser = JsonParser()
     food_truck_display_columns = food_truck_finder_object.get_columns_to_display(config_dictionary)
 
-    # The program keeps running until user enters exit or an except occurs resulting in termination of program
+    # The program keeps running until user enters exit or an exception occurs resulting in termination of program
     while True:
         response = food_truck_finder_object.fetch_all_open_food_trucks(current_request_url, current_date)
 
